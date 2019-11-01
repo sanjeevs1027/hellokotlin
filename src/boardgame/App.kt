@@ -5,18 +5,19 @@ package boardgame
 fun main(){
     val board = getBoard()
     val dice = getDice()
-    val players = getPlayers()
+//    val players = getPlayers()
+
 
 }
 
-fun getPlayers(): Any? {
-    return null
-}
+
 
 fun getDice(): Any? {
     return null
 }
 
-fun getBoard():  Any? {
-    return null
+fun getBoard():  List<String> {
+    println("Enter the board cells:")
+    val cells = readLine() ?: ""
+    return cells.split(",")
 }
